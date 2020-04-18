@@ -1,6 +1,12 @@
 # VoloSpesa | FlyinGroceries
 
-### _This project was born during the Covid-19 lockdown in Milan, Italy, and was developed together with [Andrea Carotti](https://github.com/andreacarotti99)._
+### Italian version: [VoloSpesa](https://volospesa.herokuapp.com)
+
+###English version: [FlyinGroceries](https://flyingroceries.herokuapp.com)
+
+##
+
+_This project was born during the Covid-19 lockdown in Milan, Italy, and was developed together with [Andrea Carotti](https://github.com/andreacarotti99) as a way to help our local volunteering community._
 
 ### _Want to know more? Read [the article](https://www.nicolasracchi.com/blog/volospesa) on my blog about this project_
 
