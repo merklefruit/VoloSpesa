@@ -1,0 +1,91 @@
+/* Carousel */
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 450px;
+  line-height: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slide {
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.internal {
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .slide {
+    height: 300px;
+  }
+  .ant-carousel .slick-slide {
+    height: 300px;
+  }
+}
+
+.slide1 {
+  background-image: url("../../static/img/slide1.jpg");
+}
+.slide2 {
+  background-image: url("../../static/img/slide2.jpg");
+}
+.slide3 {
+  background-image: url("../../static/img/slide3.jpg");
+}
+.slide4 {
+  background-image: url("../../static/img/slide4.jpg");
+}
+
+/* Features  */
+
+.features-div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  margin-top: 0px;
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 1.4em;
+  }
+}
+
+.card-text {
+  font-size: 1.3em;
+}
+.card {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* button Fai un ordine */
+.faiunordine {
+  border: none;
+  outline: none;
+  height: 70px;
+  width: 280px;
+  font-size: 1.7em;
+  background-color: #2a8bfc;
+  outline: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: 300;
+}
+
+.faiunordine:hover {
+  outline: none;
+  transform: scale(1.02);
+  transition: ease 0.3s;
+  background-color: #43a5fd;
+}

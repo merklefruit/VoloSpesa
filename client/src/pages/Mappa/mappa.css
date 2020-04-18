@@ -1,0 +1,47 @@
+.map {
+  height: 100vh;
+  cursor: grab;
+  margin: 0;
+  z-index: 0;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.loadingdiv {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -100%);
+}
+
+.buttondiv {
+  text-align: center;
+}
+
+.info-drawer {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.moreinfo {
+  margin-top: 5px;
+  background-color: green;
+  border-color: green;
+}
+.moreinfo:hover {
+  background-color: rgb(90, 150, 0);
+  border-color: rgb(90, 150, 0);
+}
+
+.consegnala-div {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ant-drawer-title {
+  text-align: center;
+}

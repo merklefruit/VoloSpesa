@@ -1,0 +1,19 @@
+{
+  "name": "volospesa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server-dev": "npm run dev --prefix server",
+    "server-prod": "npm run start --prefix server",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\"",
+    "build": "concurrently \"npm run server-prod\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Nicolas Racchi",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

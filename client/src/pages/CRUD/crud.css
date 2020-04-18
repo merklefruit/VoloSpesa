@@ -1,0 +1,29 @@
+.inline {
+  display: inline-block;
+  margin-top: 9px;
+}
+
+.refresh-button {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.mess-length {
+  margin-top: 7px;
+  margin-left: 15px;
+  font-size: 1.25em;
+}
+
+.ant-list-item {
+  font-size: 1.25em;
+  border: solid;
+  border-left: none;
+  border-right: none;
+  border-top: 0.1px solid rgb(211, 211, 211);
+}
+
+@media only screen and (max-width: 600px) {
+  .ant-list-item {
+    font-size: 1.2em;
+  }
+}

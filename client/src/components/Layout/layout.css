@@ -1,0 +1,24 @@
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 300px;
+}
+
+.logo {
+  text-align: center;
+  font-size: large;
+}
+
+.logo-link {
+  color: white;
+}
+
+.contentdiv {
+  padding: 0 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contentdiv {
+    padding: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.title {
+  text-align: center;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.ant-descriptions-item-content {
+  font-size: 1.2em;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Error description */
+
+.desc {
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .ant-result-error {
+    padding: 0;
+    padding-top: 32px;
+  }
+  .ant-result-content {
+    padding: 15px;
+  }
+  .desc {
+    font-size: 1.2em;
+  }
+}

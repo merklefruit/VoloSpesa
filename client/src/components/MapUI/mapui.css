@@ -1,0 +1,52 @@
+/* home */
+.uibutton {
+  position: absolute;
+  left: 6px;
+  top: 200px;
+  z-index: 10;
+  width: 120px;
+  height: 50px;
+  border-radius: 1000px;
+}
+/* ordina */
+.uibutton-2 {
+  position: absolute;
+  left: 6px;
+  top: 140px;
+  z-index: 10;
+  width: 120px;
+  height: 50px;
+  border-radius: 1000px;
+}
+
+/* chi siamo */
+.uibutton-3 {
+  position: absolute;
+  left: 6px;
+  top: 80px;
+  z-index: 10;
+  width: 120px;
+  height: 50px;
+  border-radius: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* home */
+  .uibutton {
+    top: 190px;
+    width: 75px;
+    height: 45px;
+  }
+  /* ordina */
+  .uibutton-2 {
+    top: 135px;
+    width: 82px;
+    height: 45px;
+  }
+  /* chi siamo */
+  .uibutton-3 {
+    top: 80px;
+    width: 99px;
+    height: 45px;
+  }
+}
