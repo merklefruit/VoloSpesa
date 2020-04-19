@@ -1,6 +1,6 @@
 # VoloSpesa | FlyinGroceries
 
-<img src="thumbnail.png" width="200"></img>
+<img src="/volospesa-design/thumbnail.png" width="200"></img>
 
 ### Italian version: [VoloSpesa](https://volospesa.herokuapp.com)
 
@@ -14,7 +14,7 @@ _This project was born during the Covid-19 lockdown in Milan, Italy, and was dev
 
 ### We enable volunteers in your area to bring groceries to people in need during COVID lockdown
 
-<img src="web_app_flowchart.png"></img>
+<img src="/volospesa-design/web_app_flowchart.png"></img>
 
 ## Usage
 
