@@ -24,12 +24,9 @@ If you want to run this web app locally, just follow these steps:
 # clone repository
 git clone https://github.com/nicolas-racchi/VoloSpesa
 # install dependencies and run devleopment server
-cd Volospesa/client
-npm install
-cd ../server
-npm install
-cd ..
-npm run dev
+cd Volospesa/client && npm install
+cd ../server && npm install
+cd .. && npm run dev
 ```
 
 # Here's the whole story:
