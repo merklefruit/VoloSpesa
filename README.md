@@ -18,13 +18,17 @@ _This project was born during the Covid-19 lockdown in Milan, Italy, and was dev
 
 ## Usage
 
-_ if you want to run this web app locally, just follow these steps:_
+If you want to run this web app locally, just follow these steps:
 
 ```bash
 # clone repository
 git clone https://github.com/nicolas-racchi/VoloSpesa
 # install dependencies and run devleopment server
+cd Volospesa/client
 npm install
+cd ../server
+npm install
+cd ..
 npm run dev
 ```
 
