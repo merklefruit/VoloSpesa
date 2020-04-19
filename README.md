@@ -16,6 +16,18 @@ _This project was born during the Covid-19 lockdown in Milan, Italy, and was dev
 
 <img src="web_app_flowchart.png"></img>
 
+## Usage
+
+_ if you want to run this web app locally, just follow these steps:_
+
+```bash
+# clone repository
+git clone https://github.com/nicolas-racchi/VoloSpesa
+# install dependencies and run devleopment server
+npm install
+npm run dev
+```
+
 # Here's the whole story:
 
 ## INSPIRATION
