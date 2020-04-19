@@ -67,5 +67,6 @@ More technically speaking we deepened our knowledge in asynchronous functions an
 
 we are already making contact with voluntary association in Milan, hoping that the service before being launched on global level could be tested first by volunteers, then, since FlyinGroceries is a non-profit platform, with the help of socially involved influencers committed to the cause we could reach a broader audience.
 
-##EXTRA FEATURES WE'RE WORKING ON
+## EXTRA FEATURES WE'RE WORKING ON
+
 We are figuring out ways to hide the phone number of people that make orders. For now, the only reason this feature isn't present is that we are on a tight budget. Another useful feature we are adding is the possibility for volunteers to receive notifications in the app when an order has been submitted near them.
