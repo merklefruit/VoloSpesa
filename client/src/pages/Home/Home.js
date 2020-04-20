@@ -74,7 +74,7 @@ export default class Home extends Component {
                 Per favore rispetta le linee guida igieniche della tua città.
                 <br />
                 La loro mancata adesione potrebbe potenzialmente mettere a
-                rischio la tua vita e quella di altri individui.
+                rischio la tua vita e quella di altri individui intorno a te.
               </Text>
             </div>
           </div>
