@@ -76,3 +76,7 @@ we are already making contact with voluntary association in Milan, hoping that t
 ## EXTRA FEATURES WE'RE WORKING ON
 
 We are figuring out ways to hide the phone number of people that make orders. For now, the only reason this feature isn't present is that we are on a tight budget. Another useful feature we are adding is the possibility for volunteers to receive notifications in the app when an order has been submitted near them.
+
+## This Project was submitted for the Terminal "Tech Takes On Covid" Online Hackaton
+
+<img src="/volospesa-design/tech_takes_on_covid.png" ></img>
