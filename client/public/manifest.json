@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "VoloSpesa",
+  "name": "Volontariato semplice durante l'emergenza COVID-19",
   "icons": [
     {
       "src": "favicon.ico",
