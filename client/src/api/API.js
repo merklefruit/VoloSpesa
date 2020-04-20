@@ -39,18 +39,18 @@ export function getLocation() {
           lng: position.coords.longitude
         });
       },
-      () => {
-        resolve(
-          fetch("https://ipapi.co/json")
-            .then(res => res.json())
-            .then(location => {
-              return {
-                lat: location.latitude,
-                lng: location.longitude
-              };
-            })
-        );
-      },
+      // () => {
+      //   resolve(
+      //     fetch("https://ipapi.co/json")
+      //       .then(res => res.json())
+      //       .then(location => {
+      //         return {
+      //           lat: location.latitude,
+      //           lng: location.longitude
+      //         };
+      //       })
+      //   );
+      // },
       { timeout: 10000, enableHighAccuracy: true }
     );
   });

@@ -284,7 +284,7 @@ export default class Lista extends Component {
             <Result
               status="success"
               title="Spesa inviata correttamente!"
-              subTitle=""
+              subTitle="Verrai contattato da un volontario il prima possibile."
               extra={[
                 <Link to="/" key={this.state.message.nome}>
                   <Button type="primary" size="large">
