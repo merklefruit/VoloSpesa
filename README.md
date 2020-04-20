@@ -2,7 +2,7 @@
 
 <img src="/volospesa-design/thumbnail.png" width="200"></img>
 
-### Italian version: [VoloSpesa](http://volospesa.org)
+### Italian version: [VoloSpesa](http://www.volospesa.org)
 
 ### English version: [FlyinGroceries](https://flyingroceries.herokuapp.com)
 
