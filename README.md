@@ -2,7 +2,7 @@
 
 <img src="/volospesa-design/thumbnail.png" width="200"></img>
 
-### Italian version: [VoloSpesa](https://volospesa.herokuapp.com)
+### Italian version: [VoloSpesa](http://volospesa.org)
 
 ### English version: [FlyinGroceries](https://flyingroceries.herokuapp.com)
 
@@ -18,11 +18,17 @@ _This project was born during the Covid-19 lockdown in Milan, Italy, and was dev
 
 ## Usage
 
-If you want to run this web app locally, just follow these steps:
+If you want to run this web app locally, follow these steps:
 
 ```bash
 # clone repository
 git clone https://github.com/nicolas-racchi/VoloSpesa
+
+# You will need environment variables as described in the .env.sample file
+# Located in the server folder.
+# Create a .env file in the server folder and add the variables.
+# Example: (.env)
+# DATABASE_URL="my_mongo_user:my_mongo_password
 
 # install dependencies and run devleopment server
 cd Volospesa/client && npm install

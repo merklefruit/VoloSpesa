@@ -1,7 +1,7 @@
 const API_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:5000/api/v1/messages"
-    : "https://api-volospesa.herokuapp.com/api/v1/messages";
+    : "http://api.volospesa.org/api/v1/messages";
 
 // RIFARE TUTTO CON ASYNC AWAIT
 
