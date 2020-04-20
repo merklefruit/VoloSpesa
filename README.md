@@ -28,7 +28,7 @@ git clone https://github.com/nicolas-racchi/VoloSpesa
 # Located in the server folder.
 # Create a .env file in the server folder and add the variables.
 # Example: (.env)
-# DATABASE_URL="my_mongo_user:my_mongo_password
+# DATABASE_URL=my_mongo_username:my_mongo_password
 
 # install dependencies and run devleopment server
 cd Volospesa/client && npm install
