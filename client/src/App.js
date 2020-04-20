@@ -9,6 +9,7 @@ import Consegnala from "./pages/Consegnala/Consegnala";
 
 // EXTRA
 import Contatta from "./pages/Contatta/Contatta";
+import Privacy from "./pages/Privacy/Privacy";
 import Statistiche from "./pages/Statistiche/Statistiche";
 
 // DEVELOPMENT
@@ -28,6 +29,7 @@ function App() {
 
       {/* EXTRA */}
       <Route exact path="/contatta" component={Contatta}></Route>
+      <Route exact path="/privacy" component={Privacy}></Route>
       <Route exact path="/statistiche" component={Statistiche}></Route>
 
       {/* DEVELOPMENT */}

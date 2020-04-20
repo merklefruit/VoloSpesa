@@ -19,7 +19,8 @@ function PageLayout({ children }) {
         <div className="site-layout-content">{children}</div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        &copy; — 2020 Creato da <Link to="/contatta">Splitting Bits</Link>
+        &copy; 2020 — <Link to="/contatta">Contatti</Link> —{" "}
+        <Link to="/privacy">Privacy</Link>
       </Footer>
     </Layout>
   );

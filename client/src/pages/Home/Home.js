@@ -13,13 +13,7 @@ export default class Home extends Component {
       <PageLayout>
         <section className="carousel">
           <Carousel autoplay>
-            <div className="slide slide1">
-              {/* <div className="internal">
-            <Title style={{ color: "white" }} level={1}>
-              #IoRestoACasa
-            </Title>
-          </div> */}
-            </div>
+            <div className="slide slide1"></div>
             <div className="slide slide2"></div>
             <div className="slide slide3"></div>
             <div className="slide slide4"></div>
@@ -64,9 +58,9 @@ export default class Home extends Component {
             <Title level={2}>Sei un volontario?</Title>
             <div className="card-text card" style={{ marginBottom: 15 }}>
               <Text>
-                Se hai del tempo a disposizione e un po' di iniziativa, puoi
-                consultare la mappa in cui appaiono tutte le richieste di spesa.
-                Se ne trovi una abbastanza vicina a casa tua, mettiti in
+                Se vuoi aiutare la tua comunità locale facendo il volontario,
+                puoi consultare la mappa in cui appaiono tutte le richieste di
+                spesa. Se ne trovi una abbastanza vicina a casa tua, mettiti in
                 contatto tramite telefono con chi l'ha richiesta.
               </Text>
             </div>
@@ -75,6 +69,14 @@ export default class Home extends Component {
                 Vai alla mappa
               </Button>
             </Link>
+            <div className="card-text card" style={{ marginTop: 15 }}>
+              <Text strong>
+                Per favore rispetta le linee guida igieniche della tua città.
+                <br />
+                La loro mancata adesione potrebbe potenzialmente mettere a
+                rischio la tua vita e quella di altri individui.
+              </Text>
+            </div>
           </div>
         </section>
       </PageLayout>

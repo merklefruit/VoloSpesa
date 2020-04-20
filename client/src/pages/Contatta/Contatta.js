@@ -1,5 +1,6 @@
 import React from "react";
-import { Typography, Collapse, Card, Divider, Button } from "antd";
+import { Link } from "react-router-dom";
+import { Typography, Collapse, Card, Divider, Button, Space } from "antd";
 import PageLayout from "../../components/Layout/PageLayout";
 
 import "./contatta.css";
@@ -38,7 +39,7 @@ function Contatta() {
         </Card>
         <p style={{ marginTop: "18px" }} />
         <div className="center">
-          <a href="mailto:nicksmavic@gmail.com">
+          <a href="mailto:support@volospesa.org">
             <Button type="primary" size="large">
               Mandaci una mail
             </Button>
@@ -100,6 +101,30 @@ function Contatta() {
             </Text>
           </Panel>
         </Collapse>
+
+        <p style={{ marginTop: "25px" }} />
+        <div className="center">
+          <Title level={3}>Link Utili:</Title>
+        </div>
+        <div className="center">
+          <Space>
+            <Link to="/">
+              <Button type="primary" size="large">
+                Home
+              </Button>
+            </Link>
+            <Link to="/mappa">
+              <Button type="primary" size="large">
+                Mappa
+              </Button>
+            </Link>
+            <Link to="/privacy">
+              <Button type="primary" size="large">
+                Privacy
+              </Button>
+            </Link>
+          </Space>
+        </div>
 
         <p style={{ marginTop: "25px" }} />
         <div className="center">

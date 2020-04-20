@@ -283,7 +283,7 @@ export default class Lista extends Component {
           {current === 2 && redirect && (
             <Result
               status="success"
-              title="Spesa inviata correttamente!"
+              title="Ordine effettuato correttamente!"
               subTitle="Verrai contattato da un volontario il prima possibile."
               extra={[
                 <Link to="/" key={this.state.message.nome}>
@@ -314,6 +314,8 @@ export default class Lista extends Component {
                 <Text>
                   C'è stato un errore interno, per favore inserisci nuovamente i
                   dati e riprova. <br />
+                  Sei sicuro di aver riempito correttamente tutti i tuoi dati?{" "}
+                  <br />
                   Se questo errore persiste, puoi contattarci{" "}
                   <Link
                     to="/contatta"

@@ -1,0 +1,8 @@
+.centered {
+  text-align: center;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
