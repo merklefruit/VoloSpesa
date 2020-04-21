@@ -31,19 +31,17 @@ export function getMessage(id) {
 }
 
 export function getLocation() {
-  if (!navigator.geolocation) {
-    console.log("NON HO I PERMESSI!!!");
-  }
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(
       position => {
-        console.log("ECCO LA POSIZIONE");
         resolve({
           lat: position.coords.latitude,
           lng: position.coords.longitude
         });
       },
-      () => {},
+      () => {
+        reject();
+      },
       // IPAPI API ha dei problemi su alcuni device mostra posizioni
       // del tutto inattendibili ed è stato rimosso.
       // () => {
