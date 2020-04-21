@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Mappa from "./pages/Mappa/Mappa";
 import Lista from "./pages/Lista/Lista";
 import Consegnala from "./pages/Consegnala/Consegnala";
+import Volontari from "./pages/Volontari/Volontari";
 
 // EXTRA
 import Contatta from "./pages/Contatta/Contatta";
@@ -26,6 +27,7 @@ function App() {
       <Route exact path="/mappa" component={Mappa}></Route>
       <Route exact path="/lista" component={Lista}></Route>
       <Route path="/consegna/:ordine" component={Consegnala}></Route>
+      <Route exact path="/volontari" component={Volontari}></Route>
 
       {/* EXTRA */}
       <Route exact path="/contatta" component={Contatta}></Route>

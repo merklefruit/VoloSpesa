@@ -1,6 +1,7 @@
 const API_URL = "http://api.volospesa.org/api/v1/messages";
 
-// LASCIARE SOLO IN DEVELOPMENT:
+// LASCIARE SOLO IN DEVELOPMENT
+// DA USARE SOLO SE SI APPORTANO CAMBIAMENTI AL BACKEND:
 // const API_URL =
 // window.location.hostname === "localhost"
 // ? "http://localhost:5000/api/v1/messages"

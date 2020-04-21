@@ -12,7 +12,7 @@ function PageLayout({ children }) {
       <Header>
         <div className="logo">
           <Link to="/" className="logo-link">
-            <img src={Logo} style={{ width: 200 }}></img>
+            <img src={Logo} alt="logo" style={{ width: 200 }}></img>
           </Link>
         </div>
       </Header>
