@@ -31,14 +31,21 @@ export function getMessage(id) {
 }
 
 export function getLocation() {
+  if (!navigator.geolocation) {
+    console.log("NON HO I PERMESSI!!!");
+  }
   return new Promise(resolve => {
     navigator.geolocation.getCurrentPosition(
       position => {
+        console.log("ECCO LA POSIZIONE");
         resolve({
           lat: position.coords.latitude,
           lng: position.coords.longitude
         });
       },
+      () => {},
+      // IPAPI API ha dei problemi su alcuni device mostra posizioni
+      // del tutto inattendibili ed è stato rimosso.
       // () => {
       //   resolve(
       //     fetch("https://ipapi.co/json")
@@ -51,7 +58,7 @@ export function getLocation() {
       //       })
       //   );
       // },
-      { timeout: 10000, enableHighAccuracy: true }
+      { timeout: 10000, enableHighAccuracy: false }
     );
   });
 }
