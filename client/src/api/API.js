@@ -1,7 +1,10 @@
-const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:5000/api/v1/messages"
-    : "http://api.volospesa.org/api/v1/messages";
+const API_URL = "http://api.volospesa.org/api/v1/messages";
+
+// LASCIARE SOLO IN DEVELOPMENT:
+// const API_URL =
+// window.location.hostname === "localhost"
+// ? "http://localhost:5000/api/v1/messages"
+// : "http://api.volospesa.org/api/v1/messages";
 
 // RIFARE TUTTO CON ASYNC AWAIT
 
