@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import { Link } from "react-router-dom";
 
 import "./layout.css";
+import Logo from "../../static/img/logo-banner.png";
 const { Header, Content, Footer } = Layout;
 
 function PageLayout({ children }) {
@@ -11,7 +12,7 @@ function PageLayout({ children }) {
       <Header>
         <div className="logo">
           <Link to="/" className="logo-link">
-            VoloSpesa
+            <img src={Logo} style={{ width: 200 }}></img>
           </Link>
         </div>
       </Header>
