@@ -211,15 +211,15 @@ export default class Lista extends Component {
                 </div>
               </div>
               <div className="steps-action">
-                <Button type="primary" size="large" onClick={() => this.next()}>
-                  Avanti
-                </Button>
                 <Button
                   style={{ margin: 8 }}
                   size="large"
                   onClick={() => this.prev()}
                 >
                   Indietro
+                </Button>
+                <Button type="primary" size="large" onClick={() => this.next()}>
+                  Avanti
                 </Button>
               </div>
             </div>
@@ -264,18 +264,18 @@ export default class Lista extends Component {
               </div>
               <div className="steps-action">
                 <Button
-                  type="primary"
-                  size="large"
-                  onClick={this.formSubmitted}
-                >
-                  Conferma
-                </Button>
-                <Button
                   style={{ margin: 8 }}
                   size="large"
                   onClick={() => this.prev()}
                 >
                   Indietro
+                </Button>
+                <Button
+                  type="primary"
+                  size="large"
+                  onClick={this.formSubmitted}
+                >
+                  Conferma
                 </Button>
               </div>
             </div>
