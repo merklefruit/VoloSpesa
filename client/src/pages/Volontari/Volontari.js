@@ -19,7 +19,7 @@ function Volontari() {
             Ecco tutte le informazioni che ti occorre conoscere per iniziare a
             fare volontariato nella tua città
           </Title>
-          <Text className="lead-2">Informazioni utilissime</Text>
+          <Text className="lead-2">Informazioni utilissime...</Text>
         </Card>
       </div>
     </PageLayout>
