@@ -22,7 +22,9 @@ _This project was born during the Covid-19 lockdown in Milan, Italy, and was dev
 
 ## Usage
 
-If you want to run this web app locally, follow these steps:
+**This web app is made with the MERN stack: MongoDB, Express, React, NodeJS.**
+
+If you want to run this web app locally or to contribute to it, follow these steps:
 
 ```bash
 # clone repository
@@ -40,7 +42,7 @@ cd ../server && npm install
 cd .. && npm run dev
 ```
 
-# Here's the whole story:
+# Here's the whole story: [#HackAtHome](https://devpost.com/software/volospesa) #OnlineHackaton
 
 ## INSPIRATION
 
