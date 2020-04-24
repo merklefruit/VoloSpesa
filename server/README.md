@@ -2,6 +2,10 @@
 
 ## This Node.JS server was setup using a boilerplate: create-express-api by [W3CJ](https://github.com/w3cj).
 
+## IMPORTANT
+
+_This project is not using `mongoose` instead we are using `monk` with `joy` schema validation._
+
 Includes API Server utilities:
 
 - [morgan](https://www.npmjs.com/package/morgan)

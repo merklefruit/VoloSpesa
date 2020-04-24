@@ -7,11 +7,17 @@ function notFound(req, res, next) {
 /* eslint-disable no-unused-vars */
 function errorHandler(err, req, res, next) {
   /* eslint-enable no-unused-vars */
+
+  if (err.name === "UnauthorizedError") {
+    // jwt authentication error
+    return res.status(401).json({ message: "Invalid Token" });
+  }
+
   const statusCode = res.statusCode !== 200 ? res.statusCode : 500;
   res.status(statusCode);
   res.json({
     message: err.message,
-    stack: process.env.NODE_ENV === 'production' ? '🥞' : err.stack
+    stack: process.env.NODE_ENV === "production" ? "🥞" : err.stack
   });
 }
 

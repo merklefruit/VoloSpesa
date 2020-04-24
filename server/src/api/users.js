@@ -3,12 +3,15 @@ const router = express.Router();
 const Joi = require("joi");
 
 const db = require("../db");
-const messages = db.get("messages");
+const users = db.get("users");
 
-const messageSchema = Joi.object().keys({
+const userSchema = Joi.object().keys({
   nome: Joi.string()
     .min(3)
     .max(50)
+    .required(),
+  email: Joi.string()
+    .email()
     .required(),
   indirizzo: Joi.string()
     .min(5)
@@ -16,48 +19,44 @@ const messageSchema = Joi.object().keys({
     .required(),
   latitudine: Joi.number().required(),
   longitudine: Joi.number().required(),
-  telefono: Joi.number().required(),
-  spesa: Joi.string()
-    .min(3)
-    .max(500)
-    .required()
+  telefono: Joi.number()
 });
 
 router.get("/", (req, res) => {
-  messages.find().then(allMessages => {
-    res.json(allMessages);
+  users.find().then(allUsers => {
+    res.json(allUsers);
   });
 });
 
 router.get("/:id", (req, res) => {
-  messages.find(req.params.id).then(message => {
-    res.json(message);
+  users.find(req.params.id).then(user => {
+    res.json(user);
   });
 });
 
 router.post("/", (req, res, next) => {
-  const result = Joi.validate(req.body, messageSchema);
+  const result = Joi.validate(req.body, userSchema);
   if (result.error === null) {
     const {
       nome,
+      email,
       indirizzo,
       latitudine,
       longitudine,
-      telefono,
-      spesa
+      telefono
     } = req.body;
-    const messaggio = {
+    const user = {
       nome: nome,
+      email: email,
       indirizzo: indirizzo,
       latitudine: latitudine,
       longitudine: longitudine,
       telefono: telefono,
-      spesa: spesa,
       date: new Date()
     };
-    messages
-      .insert(messaggio)
-      .then(messaggioInserito => res.json(messaggioInserito))
+    users
+      .insert(user)
+      .then(userAdded => res.json(userAdded))
       .catch(err => next(err));
   } else {
     console.log("Errore post request");
