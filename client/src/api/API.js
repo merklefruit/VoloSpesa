@@ -1,4 +1,4 @@
-const API_URL = "http://api.volospesa.org/api/v1/messages";
+const API_URL = "http://api.volospesa.org/api/v1";
 
 // LASCIARE SOLO IN DEVELOPMENT
 // DA USARE SOLO SE SI APPORTANO CAMBIAMENTI AL BACKEND:
@@ -9,8 +9,13 @@ const API_URL = "http://api.volospesa.org/api/v1/messages";
 
 // RIFARE TUTTO CON ASYNC AWAIT
 
+const messageURL = API_URL + "/messages";
+const userURL = API_URL + "/users";
+
+// MESSAGES FUNCTIONS
+
 export function getMessages() {
-  return fetch(API_URL)
+  return fetch(messageURL)
     .then(res => res.json())
     .then(messages => {
       const haveSeenLocation = {};
@@ -26,7 +31,7 @@ export function getMessages() {
 }
 
 export function getMessage(id) {
-  const ORDER_URL = API_URL + "/" + id;
+  const ORDER_URL = messageURL + "/" + id;
   return fetch(ORDER_URL)
     .then(res => res.json())
     .then(messages => {
@@ -67,7 +72,7 @@ export function getLocation() {
 
 export async function sendMessage(message) {
   try {
-    const response = await fetch(API_URL, {
+    const response = await fetch(messageURL, {
       method: "POST",
       headers: {
         "content-type": "application/json"
@@ -82,7 +87,7 @@ export async function sendMessage(message) {
 }
 
 export async function deleteMessage(message) {
-  const response = await fetch(API_URL, {
+  const response = await fetch(messageURL, {
     method: "DELETE",
     headers: {
       "content-type": "application/json"
@@ -90,4 +95,20 @@ export async function deleteMessage(message) {
     body: JSON.stringify(message)
   });
   return response.status;
+}
+
+export async function addUser(user) {
+  try {
+    const response = await fetch(userURL, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify(user)
+    });
+    return response.status;
+  } catch (err) {
+    console.log(err);
+    return 400;
+  }
 }
