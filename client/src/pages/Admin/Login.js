@@ -6,10 +6,7 @@ import "./admin.css";
 
 const { Title } = Typography;
 
-const onFinish = values => {
-  message.success(values.username);
-  message.success(values.password);
-};
+const onFinish = values => {};
 
 const onFinishFailed = errorInfo => {
   console.log("Failed:", errorInfo);
