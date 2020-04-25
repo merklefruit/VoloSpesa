@@ -4,12 +4,7 @@ const users = require("./users");
 
 const router = express.Router();
 
-// router.get("/", (req, res) => {
-//   res.json({
-//     message: "API - 👋🌎🌍🌏"
-//   });
-// });
-
+// API ROUTES:
 router.use("/messages", messages);
 router.use("/users", users);
 

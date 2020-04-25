@@ -66,15 +66,13 @@ router.post("/", (req, res, next) => {
 
 router.delete("/", (req, res, next) => {
   var id = req.body._id;
-  messages
+  users
     .findOneAndDelete({ _id: id })
     .then(result => {
       if (result == null) {
-        res.status(400).json({ error: "message not found" });
-        console.log("item was not found...");
+        res.status(400).json({ error: "user not found" });
       } else {
         res.json(result);
-        console.log("item deleted correctly");
       }
     })
     .catch(err => {
@@ -84,15 +82,13 @@ router.delete("/", (req, res, next) => {
 
 router.delete("/:id", (req, res, next) => {
   var id = req.params.id;
-  messages
+  users
     .findOneAndDelete({ _id: id })
     .then(result => {
       if (result == null) {
-        res.status(400).json({ error: "message not found" });
-        console.log("item was not found...");
+        res.status(400).json({ error: "user not found" });
       } else {
         res.json(result);
-        console.log("item deleted correctly");
       }
     })
     .catch(err => {
