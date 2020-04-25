@@ -1,11 +1,11 @@
-const API_URL = "http://api.volospesa.org/api/v1";
+// const API_URL = "http://api.volospesa.org/api/v1";
 
 // LASCIARE SOLO IN DEVELOPMENT
 // DA USARE SOLO SE SI APPORTANO CAMBIAMENTI AL BACKEND:
-// const API_URL =
-// window.location.hostname === "localhost"
-// ? "http://localhost:5000/api/v1/messages"
-// : "http://api.volospesa.org/api/v1/messages";
+const API_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000/api/v1"
+    : "http://api.volospesa.org/api/v1";
 
 // RIFARE TUTTO CON ASYNC AWAIT
 
