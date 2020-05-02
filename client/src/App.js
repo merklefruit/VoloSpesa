@@ -1,6 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
+// ADMIN
+import Login from "./pages/Admin/Login";
+
 // APP PRINCIPALE
 import Home from "./pages/Home/Home";
 import Mappa from "./pages/Mappa/Mappa";
@@ -22,6 +25,9 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Switch>
+      {/* ADMIN */}
+      <Route exact path="/admin" component={Login}></Route>
+
       {/* APP PRINCIPALE */}
       <Route exact path="/" component={Home}></Route>
       <Route exact path="/mappa" component={Mappa}></Route>
