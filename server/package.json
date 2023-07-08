@@ -20,7 +20,7 @@
     "joi": "^14.3.1",
     "monk": "^7.1.2",
     "morgan": "^1.9.1",
-    "node-geocoder": "^3.27.0"
+    "node-geocoder": "^4.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
